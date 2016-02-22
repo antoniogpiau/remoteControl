@@ -10,26 +10,43 @@ import UIKit
 
 class ConfigurationViewController: UIViewController {
 
+    @IBOutlet weak var tf_Label: UITextField!
+    @IBOutlet weak var sc_Button: UISegmentedControl!
+    @IBOutlet weak var lb_Channel: UILabel!
+    @IBOutlet weak var st_Buttons: UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func tf_LabelEndEditing(sender: UITextField) {
+        sender.resignFirstResponder()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
+    
+    @IBAction func st_Channel(sender: AnyObject) {
+        lb_Channel.text = "\(Int(st_Buttons.value))"  ;
+    }
+
+    @IBAction func bt_CancelPressed(sender: UIButton) {
+        tf_Label.text = ""
+        st_Buttons.value = 1
+        lb_Channel.text = "\(Int(st_Buttons.value))" 
+        
+    }
+
+    @IBAction func bt_SavePressed(sender: UIButton) {
+        if (tf_Label.text?.characters.count > 4)||(tf_Label.text?.characters.count < 1){
+            let alertController = UIAlertController(title: "Error", message:
+                "Label text field must be between 1-4 characters.", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        
+    }
 
 }

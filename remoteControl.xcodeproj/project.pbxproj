@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8930F2F41C76C8A30094D01B /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */; };
+		8974E2411C6ABAC9004D130E /* DVRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974E2401C6ABAC9004D130E /* DVRViewController.swift */; };
 		89E0F19B1C585A95003E42AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19A1C585A95003E42AC /* AppDelegate.swift */; };
-		89E0F19D1C585A95003E42AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19C1C585A95003E42AC /* ViewController.swift */; };
+		89E0F19D1C585A95003E42AC /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19C1C585A95003E42AC /* TVViewController.swift */; };
 		89E0F1A01C585A95003E42AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E0F19E1C585A95003E42AC /* Main.storyboard */; };
 		89E0F1A21C585A96003E42AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E0F1A11C585A96003E42AC /* Assets.xcassets */; };
 		89E0F1A51C585A96003E42AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E0F1A31C585A96003E42AC /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		8974E2401C6ABAC9004D130E /* DVRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVRViewController.swift; sourceTree = "<group>"; };
 		89E0F1971C585A95003E42AC /* remoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E0F19A1C585A95003E42AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89E0F19C1C585A95003E42AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89E0F19C1C585A95003E42AC /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
 		89E0F19F1C585A95003E42AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89E0F1A11C585A96003E42AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89E0F1A41C585A96003E42AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				89E0F19A1C585A95003E42AC /* AppDelegate.swift */,
-				89E0F19C1C585A95003E42AC /* ViewController.swift */,
+				89E0F19C1C585A95003E42AC /* TVViewController.swift */,
 				89E0F19E1C585A95003E42AC /* Main.storyboard */,
 				89E0F1A11C585A96003E42AC /* Assets.xcassets */,
 				89E0F1A31C585A96003E42AC /* LaunchScreen.storyboard */,
 				89E0F1A61C585A96003E42AC /* Info.plist */,
+				8974E2401C6ABAC9004D130E /* DVRViewController.swift */,
+				8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */,
 			);
 			path = remoteControl;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					89E0F1961C585A95003E42AC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2UE47YSJK2;
 					};
 					89E0F1AA1C585A96003E42AC = {
 						CreatedOnToolsVersion = 7.2;
@@ -256,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E0F19D1C585A95003E42AC /* ViewController.swift in Sources */,
+				89E0F19D1C585A95003E42AC /* TVViewController.swift in Sources */,
+				8930F2F41C76C8A30094D01B /* ConfigurationViewController.swift in Sources */,
+				8974E2411C6ABAC9004D130E /* DVRViewController.swift in Sources */,
 				89E0F19B1C585A95003E42AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +406,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = remoteControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.depaul.csc471.remoteControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,10 +421,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = remoteControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.depaul.csc471.remoteControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,6 +499,7 @@
 				89E0F1C11C585A96003E42AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89E0F1C21C585A96003E42AC /* Build configuration list for PBXNativeTarget "remoteControlTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +508,7 @@
 				89E0F1C41C585A96003E42AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89E0F1C51C585A96003E42AC /* Build configuration list for PBXNativeTarget "remoteControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +517,7 @@
 				89E0F1C71C585A96003E42AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
