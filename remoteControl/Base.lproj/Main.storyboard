@@ -256,7 +256,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="TV" id="34I-3n-IGF"/>
+                    <tabBarItem key="tabBarItem" title="TV" image="TV Show-50" selectedImage="TV Show-50" id="34I-3n-IGF"/>
                     <connections>
                         <outlet property="buttonEight" destination="mOb-7H-3mD" id="Cqc-ds-caS"/>
                         <outlet property="buttonFive" destination="RFP-jV-8mB" id="hZu-IF-RSt"/>
@@ -429,7 +429,7 @@
                             <constraint firstItem="EFe-yc-UL1" firstAttribute="top" secondItem="1dJ-0D-K4R" secondAttribute="topMargin" id="vKl-c0-U6a"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="DVR" id="x2v-rL-Q7L"/>
+                    <tabBarItem key="tabBarItem" title="DVR" image="Retro TV-50" selectedImage="Retro TV-50" id="x2v-rL-Q7L"/>
                     <connections>
                         <outlet property="buttonFoward" destination="XQb-9q-6GC" id="WcR-Pk-yj6"/>
                         <outlet property="buttonPause" destination="APv-kW-0r8" id="S4z-xN-Vr2"/>
@@ -594,7 +594,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Configuration" id="PnV-dq-uo8" userLabel="Configuration"/>
+                    <tabBarItem key="tabBarItem" title="Configuration" image="Settings-50" selectedImage="Settings-50" id="PnV-dq-uo8" userLabel="Configuration"/>
                     <connections>
                         <outlet property="lb_Channel" destination="zje-JY-hlu" id="UPK-pe-4en"/>
                         <outlet property="sc_Button" destination="V1n-3O-qtP" id="Vql-Ww-LLj"/>
@@ -607,4 +607,9 @@
             <point key="canvasLocation" x="631" y="-1205"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Retro TV-50" width="50" height="50"/>
+        <image name="Settings-50" width="50" height="50"/>
+        <image name="TV Show-50" width="50" height="50"/>
+    </resources>
 </document>

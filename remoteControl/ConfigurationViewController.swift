@@ -50,6 +50,12 @@ class ConfigurationViewController: UIViewController {
         }else{
             globalVar.buttonLabel[sc_Button.selectedSegmentIndex] = tf_Label.text!
             globalVar.channelNumber[sc_Button.selectedSegmentIndex] = Int(lb_Channel.text!)!
+            
+            let alertController = UIAlertController(title: "Success", message:
+                "All changes has been successfully saved.", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
     }
     

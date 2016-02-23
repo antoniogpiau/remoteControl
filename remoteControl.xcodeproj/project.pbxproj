@@ -10,6 +10,10 @@
 		8930F2F41C76C8A30094D01B /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */; };
 		8974E2411C6ABAC9004D130E /* DVRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974E2401C6ABAC9004D130E /* DVRViewController.swift */; };
 		899DABD91C7C00BF00B4A3CE /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899DABD81C7C00BF00B4A3CE /* GlobalVariables.swift */; };
+		899DABE61C7C1F9100B4A3CE /* Retro TV-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 899DABE21C7C1F9100B4A3CE /* Retro TV-50.png */; };
+		899DABE71C7C1F9100B4A3CE /* Settings-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 899DABE31C7C1F9100B4A3CE /* Settings-50.png */; };
+		899DABE81C7C1F9100B4A3CE /* TV Show-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 899DABE41C7C1F9100B4A3CE /* TV Show-50.png */; };
+		899DABE91C7C1F9100B4A3CE /* TV-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 899DABE51C7C1F9100B4A3CE /* TV-50.png */; };
 		89E0F19B1C585A95003E42AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19A1C585A95003E42AC /* AppDelegate.swift */; };
 		89E0F19D1C585A95003E42AC /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19C1C585A95003E42AC /* TVViewController.swift */; };
 		89E0F1A01C585A95003E42AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E0F19E1C585A95003E42AC /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		8974E2401C6ABAC9004D130E /* DVRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVRViewController.swift; sourceTree = "<group>"; };
 		899DABD81C7C00BF00B4A3CE /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		899DABE21C7C1F9100B4A3CE /* Retro TV-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retro TV-50.png"; sourceTree = "<group>"; };
+		899DABE31C7C1F9100B4A3CE /* Settings-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-50.png"; sourceTree = "<group>"; };
+		899DABE41C7C1F9100B4A3CE /* TV Show-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TV Show-50.png"; sourceTree = "<group>"; };
+		899DABE51C7C1F9100B4A3CE /* TV-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TV-50.png"; sourceTree = "<group>"; };
 		89E0F1971C585A95003E42AC /* remoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E0F19A1C585A95003E42AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E0F19C1C585A95003E42AC /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 		89E0F1991C585A95003E42AC /* remoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				899DABE21C7C1F9100B4A3CE /* Retro TV-50.png */,
+				899DABE31C7C1F9100B4A3CE /* Settings-50.png */,
+				899DABE41C7C1F9100B4A3CE /* TV Show-50.png */,
+				899DABE51C7C1F9100B4A3CE /* TV-50.png */,
 				89E0F19A1C585A95003E42AC /* AppDelegate.swift */,
 				89E0F19C1C585A95003E42AC /* TVViewController.swift */,
 				89E0F19E1C585A95003E42AC /* Main.storyboard */,
@@ -239,8 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899DABE81C7C1F9100B4A3CE /* TV Show-50.png in Resources */,
 				89E0F1A51C585A96003E42AC /* LaunchScreen.storyboard in Resources */,
+				899DABE91C7C1F9100B4A3CE /* TV-50.png in Resources */,
 				89E0F1A21C585A96003E42AC /* Assets.xcassets in Resources */,
+				899DABE61C7C1F9100B4A3CE /* Retro TV-50.png in Resources */,
+				899DABE71C7C1F9100B4A3CE /* Settings-50.png in Resources */,
 				89E0F1A01C585A95003E42AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
