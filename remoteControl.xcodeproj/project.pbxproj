@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8930F2F41C76C8A30094D01B /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */; };
 		8974E2411C6ABAC9004D130E /* DVRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974E2401C6ABAC9004D130E /* DVRViewController.swift */; };
+		899DABD91C7C00BF00B4A3CE /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899DABD81C7C00BF00B4A3CE /* GlobalVariables.swift */; };
 		89E0F19B1C585A95003E42AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19A1C585A95003E42AC /* AppDelegate.swift */; };
 		89E0F19D1C585A95003E42AC /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0F19C1C585A95003E42AC /* TVViewController.swift */; };
 		89E0F1A01C585A95003E42AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E0F19E1C585A95003E42AC /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		8974E2401C6ABAC9004D130E /* DVRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVRViewController.swift; sourceTree = "<group>"; };
+		899DABD81C7C00BF00B4A3CE /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		89E0F1971C585A95003E42AC /* remoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E0F19A1C585A95003E42AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E0F19C1C585A95003E42AC /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				89E0F1A61C585A96003E42AC /* Info.plist */,
 				8974E2401C6ABAC9004D130E /* DVRViewController.swift */,
 				8930F2F31C76C8A30094D01B /* ConfigurationViewController.swift */,
+				899DABD81C7C00BF00B4A3CE /* GlobalVariables.swift */,
 			);
 			path = remoteControl;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				8930F2F41C76C8A30094D01B /* ConfigurationViewController.swift in Sources */,
 				8974E2411C6ABAC9004D130E /* DVRViewController.swift in Sources */,
 				89E0F19B1C585A95003E42AC /* AppDelegate.swift in Sources */,
+				899DABD91C7C00BF00B4A3CE /* GlobalVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

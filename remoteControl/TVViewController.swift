@@ -34,7 +34,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[0], forSegmentAtIndex: 0)
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[1], forSegmentAtIndex: 1)
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[2], forSegmentAtIndex: 2)
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[3], forSegmentAtIndex: 3)
+    }
+    
+    override func viewWillAppear(animated:Bool){
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[0], forSegmentAtIndex: 0)
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[1], forSegmentAtIndex: 1)
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[2], forSegmentAtIndex: 2)
+        segmentControlFavorite.setTitle(globalVar.buttonLabel[3], forSegmentAtIndex: 3)
     }
     
     
@@ -86,16 +96,16 @@ class ViewController: UIViewController {
         {
         case 0:
             channel = 15;
-            labelChanel.text = "15";
+            labelChanel.text = String(globalVar.channelNumber[0]);
         case 1:
             channel = 30;
-            labelChanel.text = "30";
+            labelChanel.text = String(globalVar.channelNumber[1]);
         case 2:
             channel = 55;
-            labelChanel.text = "55";
+            labelChanel.text = String(globalVar.channelNumber[2]);
         case 3:
             channel = 87;
-            labelChanel.text = "87";
+            labelChanel.text = String(globalVar.channelNumber[3]);
         default:
             break;
         }

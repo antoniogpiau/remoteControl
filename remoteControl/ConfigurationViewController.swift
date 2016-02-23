@@ -8,6 +8,8 @@
 
 import UIKit
 
+var globalVar = GlobalVariablesHolder()
+
 class ConfigurationViewController: UIViewController {
 
     @IBOutlet weak var tf_Label: UITextField!
@@ -28,7 +30,7 @@ class ConfigurationViewController: UIViewController {
     }
     
     @IBAction func st_Channel(sender: AnyObject) {
-        lb_Channel.text = "\(Int(st_Buttons.value))"  ;
+        lb_Channel.text = "\(Int(st_Buttons.value))"
     }
 
     @IBAction func bt_CancelPressed(sender: UIButton) {
@@ -45,8 +47,10 @@ class ConfigurationViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
+        }else{
+            globalVar.buttonLabel[sc_Button.selectedSegmentIndex] = tf_Label.text!
+            globalVar.channelNumber[sc_Button.selectedSegmentIndex] = Int(lb_Channel.text!)!
         }
-        
     }
-
+    
 }
